@@ -4,21 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quản lý khách hàng</title>
+    <title>Tìm kiếm</title>
 </head>
 
 <body>
     <div class="flex justify-between items-center mb-8">
-        <h2 class="text-3xl font-bold">Quản lý khách hàng</h2>
-        <a class="inline-block p-4 bg-blue-200 rounded-3xl hover:bg-blue-100 transition-colors pointed" href="<?= APP_URL . "?act=create" ?>">Thêm mới</a>
+        <h2 class="text-3xl font-bold">Kết quả tìm kiếm cho <?= " " . $keyword ?></h2>
     </div>
-
-    <form action="<?= APP_URL ?>" method="GET" class="flex items-stretch mb-8 gap-4">
-        <input type="hidden" name="act" value="search">
-        <input type="text" class="px-4 py-2 border" name="keyword" placeholder="Nhập tên để tìm kiếm.....">
-        <button class="inline-block bg-blue-200 rounded-3xl px-4 hover:bg-blue-100 transition-colors pointed text-white">Tìm kiếm</button>
-    </form>
-
     <table class="w-full text-left divide-y">
         <thead class="bg-gray-100 uppercase">
             <th scope="col" class="px-6 py-3 font-bold">STT</th>
