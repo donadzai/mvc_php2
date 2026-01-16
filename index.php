@@ -21,6 +21,12 @@ match ($act) {
     // Nơi khai báo các đường dẫn
     '/' => (new HomeController())->index(),
     'customers' => (new CustomerController())->index(),
+    'create' => (new CustomerController())->createCutomer(),
+    'stored' => (new CustomerController())->storedCutomer(),
+    'delete' => (new CustomerController())->deleteCustomer(),
+    'edit' => (new CustomerController())->showEditView(),
+    'update' => (new CustomerController())->updateCutomer(),
+    'search' => (new CustomerController())->searchCustomer(),
 };
 
 // Bài tập: LAB 2:
